@@ -1,0 +1,14 @@
+{
+  "name": "ityped",
+  "homepage": "https://github.com/luisvinicius167/ityped",
+  "_release": "99a39e66b9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "99a39e66b917caf5eb51b409d24ab58036ca40bd"
+  },
+  "_source": "https://github.com/luisvinicius167/ityped.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/luisvinicius167/ityped.git",
+  "_direct": true
+}

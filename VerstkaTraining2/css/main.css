@@ -1,0 +1,20 @@
+header{
+	background: #292929; overflow: hidden;
+}
+
+.center-block-main{
+	margin:0 auto; max-width: 990px;
+}
+
+.logo{
+	float: left;
+}
+
+.menu{
+	float:right;
+}
+
+.manu li{
+	float: left; font-weight:600;
+	
+}

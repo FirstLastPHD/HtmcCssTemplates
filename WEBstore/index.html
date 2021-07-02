@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Store</title>
+<meta http-equiv="Content-Type" content ="text/html; charset=utf-8 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name ="description" content=""/>
+ <meta name="keywords" content="" />
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="js/functions.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="ui/jquery-ui.js"></script>
+	<link rel="stylesheet" href="ui/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css" type="text/css" />
+ <link  rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script type="text/javascript">
+		$(document).ready(function() {
+			var w = $(window).width();
+			if (w <= 768) {
+				$("#left").html($("#left").html() + $("#right").html());
+				$("#right").remove();
+			}
+			if (w <= 600) {
+				var h2 = $("#course h2");
+				$("#course h2").remove();
+				$(h2).prependTo("#course");
+			}
+			if (w <= 468) {
+				$("#top_sep").replaceWith("<br /><br />");
+			}
+		});
+	</script>
+</head>
+<body>
+<div class="container">
+<!-- HEADER -->
+
+<header class="header">
+<nav>
+  <ul id="topmenu">
+
+<li class="myorder"><img src="images/orders.png" alt=""><a class="myorder1" href="#">My Orders</a></li>
+
+<li class="exit"><img src="images/exit.png" alt=""><a class="exit1" href="#">Exit</a></li>
+
+<li class="search">
+		 <div id="search">
+		   <form name="search" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Search" />
+					 </td>
+					 <td>
+					   <input type="submit" name="search" value="" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+<li class="cart"><img src="images/cart.png" alt=""/><span class="cart2">In Your Cart Totaly</span><span id="cart"><a class="cart1" href="#">Products on 450$</a></span></li>
+
+  </ul>
+</nav>
+</header>
+
+<!-- END HEADER -->
+
+<!-- TOP MENU -->
+<div id="top">
+    <div class="logo"><img src="images/logo.png" />
+	<div id="geolocation"><img src="images/country.png"/><a href="#" class="active1">Los Angeles California</a></div>
+	</div>
+	
+	<nav class="up_menu1">
+	<ul id="up_menu2">
+	  <li><a class="top_main" href="#" class="active1">Main</a></li>
+	  <li class="top_deleivery_payement"><a  href="#">Delivery and Payement</a></li>
+	  <li class="top_guarantees"><a  href="#">Guarantees</a></li>
+	  <li class="top_news"><a  href="#">News</a></li>
+	  <li class="top_discount_img"><img  src="images/discounts.png"/><a id="top_discounts" href="#">Discounts</a></li>
+	  <li class="top_contact"><img src="images/contact.png"/><span id="top_mobile">+(420)773-135-481</span></li>
+	  <li class="top_opening_hours"><a  href="#">Opening Hours</a></li>
+	  <li class="top_hours"><span>from 9:00 to 22:00</span></li>
+	</ul>
+	</nav>
+	
+	
+	<div id="top_backround1"><img src="images/top_backround1.png">
+	<nav>
+	  <ul>
+	    <li class="top_fb"><img src="images/fbicon.png"/><a href="#"></li>
+		<li class="top_twitter"><img src="images/twittericon.png"/><a href="#"></li>
+		<li class="top_b"><img src="images/bicon.png"/><a href="#"></li>
+		<li class="top_p"><img src="images/picon.png"/><a href="#"></li>
+		<li class="top_g_plus"><img src="images/g_plusicon.png"/><a href="#"></li>
+	  </ul>
+	</nav>
+	</div>
+	
+	<div class="top_main_menu">
+	
+	</div>
+	
+	<nav id="top_main_menu1">
+	  <ul>
+	     <li class="main_sport"><a href="#" class="active">Sport</a></li>
+		 <li class="main_trainers"><a href="#" >Trainers</a></li>
+		 <li class="main_clothing"><a href="#">Clothing</a></li>
+		 <li class="main_shoes"><a href="#">Shoes</a></li>
+		 <li class="main_tourism"><a href="#">Tourism</a></li>
+		 <li class="main_active_rest"><a href="#">Active Rest</a></li>
+	  </ul>
+	</nav>
+	
+	<div id="top_end_menu1">
+	<nav id="top_end_menu1">
+	  <ul>
+	     <li class="main_end_main"><a href="#" class="active1">Main /</a></li>
+		 <li class="main_end_shoes"><a href="#">Shoes /</a></li>
+		 <li class="main_end_sneakers"><a href="#">Sneakers /</a></li>
+	  </ul>
+	</nav>
+	</div>
+	
+	<div id="top_end_menu2">
+	<nav id="top_end_menu2">
+	  <ul>
+	     <li class="main_end_top"><span>Top:</span></li>
+		 <li class="main_end_novelties"><span>Novelties</span></li>
+	     <li class="main_end_popular"><a href="#">Popular</a></li>
+		 <li class="main_end_expencive"><a href="#">Expencive</a></li>
+		 <li class="main_end_sheap"><a href="#">Cheap with discount</a></li>
+	  </ul>
+	</nav>
+	</div>
+	
+	<div class="sep"></div>
+
+</div>
+<!-- END HEADER -->
+<div class="content">
+<!-- RIGHT MENU -->
+<div id="right_menu">
+ <div class="block">
+ <p><h3>Shoes</h3></p>
+ <div class ="shoes">
+ <nav>
+   <div>
+	<a class="active" href="#">Sneakers/222</a>
+	<div>
+	<a href="#">Running /555</a>
+	</div>
+	
+    <div>
+    <a href="#">Fitness /333</a>
+	</div>
+	
+	<div>
+    <a href="#">GYM /444</a>
+	</div>
+	
+	<div class="simming">
+    <a href="#">Swimming/888</a>
+    </div>
+	</div>
+</nav>
+</div>
+ 
+ 
+ <div class="price">
+ <div id="header"><h3>Price</h3></div>
+ <div id="slider-range"></div>
+   <input class="form-control" name="price" id="price">
+   <div>
+   <!-- <table>
+	<tr>
+	<td>
+	<input id="price_for" type="text" name="price for" />
+    </td>
+	</tr>
+						  
+	<tr>
+	<td>
+	<input id="price_to" type="text" name="price to" />
+    </td>
+	</tr>					  
+	</table>-->
+	
+   <input id="in_stock" type="checkbox" name="product_id" value="1" />
+   <label for="instock_1">In Stock</label>
+   
+   </div>
+
+   </form>
+ </div>
+ 
+ <div class="size">
+ <div id="header"><h3>SIZE</h3></div>
+   
+     <form name="size" action="#" method="post">
+	  <div>
+	  <input id="size_id_1" type="checkbox" name="size_id" value="1" />
+	  <label for="size_id_1">35</label>
+	 </div>
+					 
+	 <div>
+     <input id="size_id_2" type="checkbox" name="size_id" value="2" />
+     <label for="size_id_2">37</label>
+	</div>
+					 
+	<div>
+	<input id="size_id_3" type="checkbox" name="size_id" value="3" />
+	<label for="size_id_3">36</label>
+	</div>
+					 
+    <div>
+	<input id="size_id_4" type="checkbox" name="size_id" value="4" />
+	 <label for="size_id_4">38</label>
+	</div>
+					 
+	<!--<div>
+    <input type="submit" name="size" value="Size" class="button" />
+    </div>-->
+					 
+  </form>
+				  
+ </div>
+ 
+ <div class="for_whom">
+ <div id="header"><h3>FOR WHOM</h3></div>
+ 
+      <form name="size" action="#" method="post">
+	  <div>
+	  <input id="forwhom_id_1" type="checkbox" name="forwhom_id" value="1" />
+	  <label for="forwhom_id_1">Men's</label>
+	 </div>
+					 
+	 <div>
+     <input id="forwhom_id_2" type="checkbox" name="forwhom_id" value="2" />
+     <label for="forwhom_id_2">Nurseries</label>
+	</div>
+					 
+	<div>
+	<input id="forwhom_id_3" type="checkbox" name="forwhom_id" value="3" />
+	<label for="forwhom_id_3">Childrent's</label>
+	</div>
+					 
+    <div>
+	<input id="forwhom_id_4" type="checkbox" name="forwhom_id" value="4" />
+	 <label for="forwhom_id_4">Women's</label>
+	</div>
+					 
+	<!--<div>
+    <input type="submit" name="forwhom" value="For_Whom" class="button" />
+    </div>-->
+					 
+  </form>
+ </div>
+ 
+ 
+ <div class="brand">
+ <div id="header"><h3>BRAND</h3></div>
+  <form name="size" action="#" method="post">
+	  <div>
+	  <input id="brand_id_1" type="checkbox" name="brand_id" value="1" />
+	  <label for="brand_id_1">Rockland</label>
+	 </div>
+					 
+	 <div>
+     <input id="brand_id_2" type="checkbox" name="brand_id" value="2" />
+     <label for="brand_id_2">Columbia</label>
+	</div>
+					 
+	<div>
+	<input id="brand_id_3" type="checkbox" name="brand_id" value="3" />
+	<label for="brand_id_3">Nike</label>
+	</div>
+					 
+    <div>
+	<input id="brand_id_4" type="checkbox" name="brand_id" value="4" />
+	 <label for="brand_id_4">Adidas</label>
+	</div>
+					 
+	<!--<div>
+    <input type="submit" name="brand" value="Brand" class="button" />
+    </div>-->
+					 
+  </form>
+ </div>
+ 
+ </div>
+ 
+ <div id="buttons">
+    <div class="btn_Show">
+    <input type="submit" name="show" value="Show" class="button" />
+    </div>
+	
+	 <div class="btn_Reset">
+     <a href="<input type='submit' name='reset' value='Reset' >">Reset</a>
+    </div>
+</div>
+ 
+</div>
+
+<!-- END RIGHT MENU -->
+
+<!-- SLIDER -->
+ <div class="slider">
+  <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked"/>
+  <input class="slider__nav" type="radio" name="slider" title="slide2"/>
+  <input class="slider__nav" type="radio" name="slider" title="slide3"/>
+  <input class="slider__nav" type="radio" name="slider" title="slide4"/>
+  <div class="slider__inner">
+    <div class="slider__contents"><i class="slider__image fa fa-codepen"><img src="images/slide1.jpg"/></i>
+      <h2 class="slider__caption">codepen</h2>
+      <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+    </div>
+    <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"><img src="images/slide1.jpg"/></i>
+      <h2 class="slider__caption">newspaper-o</h2>
+      <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+    </div>
+    <div class="slider__contents"><i class="slider__image fa fa-television"><img src="images/slide1.jpg"/></i>
+      <h2 class="slider__caption">television</h2>
+      <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+    </div>
+    <div class="slider__contents"><i class="slider__image fa fa-diamond"><img src="images/slide1.jpg"/></i>
+      <h2 class="slider__caption">diamond</h2>
+      <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+    </div>
+  </div>
+</div>
+<!-- END SLIDER -->
+<!-- PRODUCTS CATEGORY -->
+<div class="block3-main center-block-main clearfix">
+
+
+  <article>
+  <img src="images/img31.png" alt="">
+  <h2><a href="#">FOTBALL SHOES</a></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+<p class="price-basket clearfix">
+<span class="price">$ 36.99</span>
+<span class="basket-btn"><a href="#"><img src="images/ico-plus.jpg" alt=""></a></span>
+</p>
+  </article>
+  
+  <article>
+  <img src="images/img32.png" alt="">
+  <h2><a href="#">MODERS CLOTHES</a></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+<p class="price-basket clearfix">
+<span class="price">$ 36.99</span>
+<span class="basket-btn"><a href="#"><img src="images/ico-plus.jpg" alt=""></a></span>
+</p>
+  </article>
+  
+  <article>
+  <img src="images/img33.png" alt="">
+  <h2><a href="#">BAGS </a></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+<p class="price-basket clearfix">
+<span class="price">$ 36.99</span>
+<span class="basket-btn"><a href="#"><img src="images/ico-plus.jpg" alt=""></a></span>
+</p>
+  </article>
+  <br/>
+  <br/>
+<div class="block4-main center-block-main clearfix">
+  <article>
+  <img src="images/img31.png" alt="">
+  <h2><a href="#">FOTBALL SHOES</a></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+<p class="price-basket clearfix">
+<span class="price">$ 36.99</span>
+<span class="basket-btn"><a href="#"><img src="images/ico-plus.jpg" alt=""></a></span>
+</p>
+  </article>
+  
+  <article>
+  <img src="images/img32.png" alt="">
+  <h2><a href="#">MODERS CLOTHES</a></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+<p class="price-basket clearfix">
+<span class="price">$ 36.99</span>
+<span class="basket-btn"><a href="#"><img src="images/ico-plus.jpg" alt=""></a></span>
+</p>
+  </article>
+  
+  <article>
+  <img src="images/img33.png" alt="">
+  <h2><a href="#">BAGS </a></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+<p class="price-basket clearfix">
+<span class="price">$ 36.99</span>
+<span class="basket-btn"><a href="#"><img src="images/ico-plus.jpg" alt=""></a></span>
+</p>
+  </article>
+  <br/>
+  <br/>
+  
+
+</div>  
+
+  <!-- PAGINATION -->
+ <div id="pagination">
+		<span>First</span>
+		<span class="last"><a href="#"></a></span>
+	    <span class="active">1</span>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<span class="next"><a href="#"></a></span>
+		<span class="prevb"><a href="#">Last</a></span>
+	  </div>
+<!-- END PAGINATION -->
+  <div class="sep"></div>
+  <div class="category_desc">
+  <h3> Category Description</h3>
+  <div class="desc_text">
+  his is my 4th pair of Frye boots. I just can't find another make that is comparable in quality. I have had great wear out of mine, but my daughter thinks their soles wear out quickly for the price. I am not hard on shoes so I can't agree with her. I wasn't sure which black to order so I called. It was explained to me that Black Soft Vintage is one solid color where as the Black Vintage is a bit worn looking and the Black rub off, even more so. I went with Black Soft Vintage. I had passed on these last year at Nordstroms and always. 
+  </div>
+  </div>
+</div>
+ <div id="rectangle"></div>
+<!-- END PRODUCTS CATEGORY -->
+
+<!-- Footer -->
+<footer>
+<div class="copyright">
+<h3>Copyright</h3>
+<span>The entire content included in this site, including but not limited to text, graphics or code is copyrighted as a collective work under the United States and other copyright laws, and is the property of Gulf Publishing Company. The collective work includes works that are licensed to Gulf Publishing Company. Copyright 2016, Gulf Publishing Company ALL RIGHTS RESERVED. Permission is granted to electronically copy and print hard copy portions of this site for the sole purpose of placing an order with Gulf Publishing Company</span> 
+</div>
+
+<div class="delivery_payement">
+<nav>
+<ul id="dellivery1">
+<li><a href="#">Main</a></li>
+<li><a href="#">Promotions and Discounts</a></li>
+<li><a href="#">News</a></li>
+</ul>
+</nav>
+<nav>
+<ul id="dellivery2">
+<li><a href="#">Deleivery and Payement</a></li>
+<li><a href="#">Guarantee</a></li>
+<li><a href="#">Contacts</a></li>
+</ul>
+</nav>
+<div id="payement">
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+</div>
+
+</div>
+
+<div class="deleivery_address">
+<h3>Our address is:</h3>
+
+Development Finance International Group       	Telt: (+44-20) 7404 9000
+39 Hatton Garden	Fax (+44-20) 7404 0833
+London	Email: dfi@dri.org.uk
+EC1N 8EH	General 
+</div>
+
+<div class="soc_posts">
+<h3>We Are Social:</h3>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+</div>
+
+</footer>
+<!-- END Footer -->
+</div>
+</div>
+ <script src="js/unslider-min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+
+</body>
+</html>

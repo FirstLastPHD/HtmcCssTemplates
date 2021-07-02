@@ -1,0 +1,392 @@
+<!DOCTYPE html/>
+<html>
+<head>
+<title>Webstore</title>
+<meta http-equiv="Content-Type" content ="text/html; charset=utf-8 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name ="description" content=""/>
+ <meta name="keywords" content="" />
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="js/custom.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="ui/jquery-ui.js"></script>
+	<link rel="stylesheet" href="ui/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css" type="text/css" />
+ <link rel="stylesheet" href="css/style.css">
+ <link  rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script type="text/javascript">
+		$(document).ready(function() {
+			var w = $(window).width();
+			if (w <= 768) {
+				$("#left").html($("#left").html() + $("#right").html());
+				$("#right").remove();
+			}
+			if (w <= 600) {
+				var h2 = $("#course h2");
+				$("#course h2").remove();
+				$(h2).prependTo("#course");
+			}
+			if (w <= 468) {
+				$("#top_sep").replaceWith("<br /><br />");
+			}
+		});
+	</script>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+
+<header>
+  <header class="header">
+<nav>
+  <ul id="topmenu">
+
+<li class="zubra"><a class="zubra1" href="#">Main</a></li>
+<li class="delivered"><a class="delivered1" href="#">Deleivered and Payement</a></li>
+
+<li class="contacts"><a class="contacts1" href="#">Contacts</a></li>
+
+<li class="search">
+		 <div id="search">
+		   <form name="search" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Search" />
+					 </td>
+					 <td>
+					   <input type="submit" name="search" value="" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+  </ul>
+</nav>
+</header>
+
+<!-- END HEADER -->
+
+<!-- SLIDER -->
+<div id="slider">
+
+<div class="slider_backround">
+
+<div class="o_hours">
+<p class="text_color">Everyday</p>
+<p class="text_color">from 9:00 AM to 9:00 PM</p>
+<p class="text_color">+420-773-135-481</p>
+</div>
+
+<div class="my_orders">
+</div>
+<div class="my_orders1">
+<p><a href="#" id="orders"><img src="images/orders.png">  My Orders</a></p>
+</div>
+
+<div class="my_orders2">
+<p><a href="#" id="exit"><img src="images/exit.png"></a></p>
+</div>
+
+<div class="cart">
+<p class="text_color">Cart Totaly:</p>
+<a href="#" id="cart"><img src="images/cart.png" /></a>
+<p class="text_color">You have 2 products on <a href="#" class="text_color">420$</a></p>
+</div>
+
+ <div id="app"></div>
+ 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js'></script>
+
+    <script src="js/index.js"></script>
+</div>
+
+<div class="logo">
+<span><a href="#"><img src="images/logo.png"/></a></span>
+</div>
+
+<div class="social">
+<span>We are social:</span>
+<a href="#"><img src="images/fb.png"/></a>
+<a href="#"><img src="images/twitter.png"/></a>
+<a href="#"><img src="images/google.png"/></a>
+<a href="#"><img src="images/b.png"/></a>
+<a href="#"><img src="images/photo.png"/></a>
+</div>
+
+</div>
+<!-- END SLIDER -->
+
+<!-- CATEGORY MENU -->
+
+  <div class="category_menu">
+<nav>
+  <ul id="topmenu">
+
+<li class="zubra"><a class="novetiles" href="#">Novetiles</a></li>
+<li class="delivered"><a class="latest" href="#">Latest</a></li>
+
+<li class="contacts"><a class="popular" href="#">Popular</a></li>
+<div class="fromto">
+ <li id="from2">Price From: </li>
+<li class="from">
+		 <div id="from">
+		   <form name="from" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="From" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+<li id="to2"> To: </li>
+
+<li class="to">
+		 <div id="to">
+		   <form name="to" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="To" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+</div>
+  </ul>
+</nav>
+
+</div>
+<!-- END CATEGORY MENU -->
+
+<!-- RIGHT MENU -->
+<div id="content">
+		   <div id="left">
+		      <div class="block">
+<div class="header">Categories</div>  
+					<div class="content">
+						<nav>
+							<div>
+								<a class="active" href="#">Film 1</a>
+								<div>
+									<a href="#">Film 2</a>
+								</div>
+								<div>
+									<a href="#">Film 3</a>
+								</div>
+							</div>
+							<div>
+								<a href="#">Film 4</a>
+							</div>
+							<div>
+								<a href="#">Film 5</a>
+							</div>
+							<div>
+								<a href="#">Film 6</a>
+							</div>
+							<div>
+								<a href="#">Film 7</a>
+							</div>
+							<div>
+								<a href="#">Film 8</a>
+							</div>
+							<div>
+								<a href="#">Film 9</a>
+							</div>
+							<div>
+								<a href="#">Film 10</a>
+							</div>
+							<div>
+								<a href="#">Film 11</a>
+							</div>
+							<div>
+								<a href="#">Film 12</a>
+							</div>
+							<div>
+								<a href="#">Film 13</a>
+							</div>
+							<div>
+								<a href="#">Film 14</a>
+							</div>
+							<div>
+								<a href="#">Film 15</a>
+							</div>
+							<div>
+								<a href="#">Film 16</a>
+							</div>
+							<div>
+								<a href="#">Film 17</a>
+							</div>
+						</nav>
+					</div>
+					</div>
+					</div>
+					</div>
+
+<!-- END RIGHT MENU -->
+
+<!-- PRODUCT  -->
+<div class="product">
+<div id="right">
+<div id="hornav">
+<table>
+<tbody><tr>
+		<td>
+			<a href="http://storedvd.ru/">Главная</a>
+		</td>
+		<td>
+			<img src="images/hornav_arrow.png" alt="">
+		</td>
+		<td>
+			<a href="http://storedvd.ru/section?id=5">Боевики</a>
+		</td>
+		<td>
+			<img src="images/hornav_arrow.png" alt="">
+		</td>
+		<td>Кто я?</td>
+	</tr>
+</tbody></table>
+</div>
+<table id="product">
+	<tbody><tr>
+		<td class="product_img">
+			<img src="images/who-am-i.jpg" alt="Кто я?">
+		</td>
+		<td class="product_desc">
+			<p> Title: <span class = "title"> Who am I? </span> </p>
+            <p> Released: <span> 1998 </span> </p>
+            <p> Genre: <span> Warriors </span> </p>
+            <p> Country of Origin: <span> Hong Kong </span> </p>
+            <p> Director: <span> Benny Chan, Jackie Chan </span> </p>
+            <p> Duration: <span> 01:58:00 </span> </p>
+            <p> Cast: <span> Jackie Chan, Michelle Ferre, Mirai Yamamoto, Ron Smerzhak, Ed Nelson, Tom Pompert, Glory Simon, Fred van Dietmarsh, Fritz Cromenhoek, Dick Rienstra </p>
+            <table>
+				<tbody><tr>
+					<td>
+						<p class="price">398 baks.</p>
+					</td>
+					<td>
+						<p>
+							<a class="link_cart" href="http://storedvd.ru/functions.php?func=add_cart&amp;id=16"></a>
+						</p>
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<p class = "desc_title"> Description: </p>
+        <p class = "desc"> A group of special forces, working under the cover of the CIA, is sent to the task of removing the energy body, which was found by scientists in the African jungle. At the end of the operation the whole group is trying to liquidate.
+         <br>
+        <br> One of the soldiers who survived the plane crash, but lost his memory, tries to fight with his thoughts and remember who he is. On the way to the truth, they interfere with him, and he does not know who can be trusted. </p>
+        </td>
+	</tr>
+</tbody></table>
+<div id="others">
+	<h3>Customers who bought this product also purchased:</h3>
+	<table class="products">
+		<tbody><tr>
+							<td>
+					<div class="intro_product">
+						<p class="img">
+							<img src="images/rush-hour-2.jpg" alt="Rush hour 2">
+						</p>
+						<p class="title">
+							<a href="http://storedvd.ru/product?id=14">Rush hour 2</a>
+						</p>
+						<p class="price">424 baks.</p>
+						<p>
+							<a class="link_cart" href="http://storedvd.ru/functions.php?func=add_cart&amp;id=14"></a>
+						</p>
+					</div>
+				</td>
+							<td>
+					<div class="intro_product">
+						<p class="img">
+							<img src="images/fei-ying.jpg" alt="Armor of God 2">
+						</p>
+						<p class="title">
+							<a href="http://storedvd.ru/product?id=13">Armor of God 2</a>
+						</p>
+						<p class="price">243 baks.</p>
+						<p>
+							<a class="link_cart" href="http://storedvd.ru/functions.php?func=add_cart&amp;id=13"></a>
+						</p>
+					</div>
+				</td>
+							<td>
+					<div class="intro_product">
+						<p class="img">
+							<img src="images/rush-hour.jpg" alt="Peak hour">
+						</p>
+						<p class="title">
+							<a href="http://storedvd.ru/product?id=15">Peak hour</a>
+						</p>
+						<p class="price">223 baks.</p>
+						<p>
+							<a class="link_cart" href="http://storedvd.ru/functions.php?func=add_cart&amp;id=15"></a>
+						</p>
+					</div>
+				</td>
+							<td>
+					<div class="intro_product">
+						<p class="img">
+							<img src="images/fifth-element.jpg" alt="Fifth Element">
+						</p>
+						<p class="title">
+							<a href="http://storedvd.ru/product?id=12">Fifth Element</a>
+						</p>
+						<p class="price">232 baks.</p>
+						<p>
+							<a class="link_cart" href="http://storedvd.ru/functions.php?func=add_cart&amp;id=12"></a>
+						</p>
+					</div>
+				</td>
+					</tr>
+	</tbody></table>
+</div>	</div></div>
+<!-- END PRODUCT -->
+
+<div id="rectangle"></div>
+<!-- Footer -->
+<footer>
+ <div class="counter">
+      <a href="#"><img src="images/counter1.png" alt="Counter" /></a>
+   </div>
+<h3 class="payement_methods">Payement Methods:</h3>
+<div id=payement>
+<div id="payement1">
+<a href="#"><img src="images/master.png"/></a>
+<a href="#"><img src="images/visa.png"/></a>
+<a href="#"><img src="images/webm.png"/></a>
+<a href="#"><img src="images/kiwi.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+</div>
+<div id="payement2">
+<a href="#"><img src="images/bil.png"/></a>
+<a href="#"><img src="images/mts.png"/></a>
+<a href="#"><img src="images/sb.png"/></a>
+<a href="#"><img src="images/a.png"/></a>
+<a href="#"><img src="images/atm.png"/></a>
+</div>
+</div>
+  
+<p class="copyright">Copyright @ All Rights Reserved</p>
+
+</footer>
+<!-- END Footer -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html/>
+<html>
+<head>
+<title>Webstore</title>
+<meta http-equiv="Content-Type" content ="text/html; charset=utf-8 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name ="description" content=""/>
+ <meta name="keywords" content="" />
+ <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="js/custom.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="ui/jquery-ui.js"></script>
+	<link rel="stylesheet" href="ui/jquery-ui.css">
+ <link rel="stylesheet" href="css/main.css" type="text/css" />
+ <link rel="stylesheet" href="css/style.css">
+ <link  rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script type="text/javascript">
+		$(document).ready(function() {
+			var w = $(window).width();
+			if (w <= 768) {
+				$("#left").html($("#left").html() + $("#right").html());
+				$("#right").remove();
+			}
+			if (w <= 600) {
+				var h2 = $("#course h2");
+				$("#course h2").remove();
+				$(h2).prependTo("#course");
+			}
+			if (w <= 468) {
+				$("#top_sep").replaceWith("<br /><br />");
+			}
+		});
+	</script>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+
+<header>
+  <header class="header">
+<nav>
+  <ul id="topmenu">
+
+<li class="zubra"><a class="zubra1" href="#">Main</a></li>
+<li class="delivered"><a class="delivered1" href="#">Deleivered and Payement</a></li>
+
+<li class="contacts"><a class="contacts1" href="#">Contacts</a></li>
+
+<li class="search">
+		 <div id="search">
+		   <form name="search" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Search" />
+					 </td>
+					 <td>
+					   <input type="submit" name="search" value="" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+  </ul>
+</nav>
+</header>
+
+<!-- END HEADER -->
+
+<!-- SLIDER -->
+<div id="slider">
+
+<div class="slider_backround">
+
+<div class="o_hours">
+<p class="text_color">Everyday</p>
+<p class="text_color">from 9:00 AM to 9:00 PM</p>
+<p class="text_color">+420-773-135-481</p>
+</div>
+
+<div class="my_orders">
+</div>
+<div class="my_orders1">
+<p><a href="#" id="orders"><img src="images/orders.png">  My Orders</a></p>
+</div>
+
+<div class="my_orders2">
+<p><a href="#" id="exit"><img src="images/exit.png"></a></p>
+</div>
+
+<div class="cart">
+<p class="text_color">Cart Totaly:</p>
+<a href="#" id="cart"><img src="images/cart.png" /></a>
+<p class="text_color">You have 2 products on <a href="#" class="text_color">420$</a></p>
+</div>
+
+ <div id="app"></div>
+ 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js'></script>
+
+    <script src="js/index.js"></script>
+</div>
+
+<div class="logo">
+<span><a href="#"><img src="images/logo.png"/></a></span>
+</div>
+
+<div class="social">
+<span>We are social:</span>
+<a href="#"><img src="images/fb.png"/></a>
+<a href="#"><img src="images/twitter.png"/></a>
+<a href="#"><img src="images/google.png"/></a>
+<a href="#"><img src="images/b.png"/></a>
+<a href="#"><img src="images/photo.png"/></a>
+</div>
+
+</div>
+<!-- END SLIDER -->
+
+<!-- CATEGORY MENU -->
+
+  <div class="category_menu">
+<nav>
+  <ul id="topmenu">
+
+<li class="zubra"><a class="novetiles" href="#">Novetiles</a></li>
+<li class="delivered"><a class="latest" href="#">Latest</a></li>
+
+<li class="contacts"><a class="popular" href="#">Popular</a></li>
+<div class="fromto">
+ <li id="from2">Price From: </li>
+<li class="from">
+		 <div id="from">
+		   <form name="from" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="From" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+<li id="to2"> To: </li>
+
+<li class="to">
+		 <div id="to">
+		   <form name="to" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="To" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+</div>
+  </ul>
+</nav>
+
+</div>
+<!-- END CATEGORY MENU -->
+
+<!-- RIGHT MENU -->
+<div id="content">
+		   <div id="left">
+		      <div class="block">
+<div class="header">Categories</div>  
+					<div class="content">
+						<nav>
+							<div>
+								<a class="active" href="#">Film 1</a>
+								<div>
+									<a href="#">Film 2</a>
+								</div>
+								<div>
+									<a href="#">Film 3</a>
+								</div>
+							</div>
+							<div>
+								<a href="#">Film 4</a>
+							</div>
+							<div>
+								<a href="#">Film 5</a>
+							</div>
+							<div>
+								<a href="#">Film 6</a>
+							</div>
+							<div>
+								<a href="#">Film 7</a>
+							</div>
+							<div>
+								<a href="#">Film 8</a>
+							</div>
+							<div>
+								<a href="#">Film 9</a>
+							</div>
+							<div>
+								<a href="#">Film 10</a>
+							</div>
+							<div>
+								<a href="#">Film 11</a>
+							</div>
+							<div>
+								<a href="#">Film 12</a>
+							</div>
+							<div>
+								<a href="#">Film 13</a>
+							</div>
+							<div>
+								<a href="#">Film 14</a>
+							</div>
+							<div>
+								<a href="#">Film 15</a>
+							</div>
+							<div>
+								<a href="#">Film 16</a>
+							</div>
+							<div>
+								<a href="#">Film 17</a>
+							</div>
+						</nav>
+					</div>
+					</div>
+					</div>
+					</div>
+
+<!-- END RIGHT MENU -->
+
+<!-- DELEIVERED AND PAYEMENT -->
+<div class="cart1">
+<div id="cart">
+	<h2>Корзина</h2>
+	<form name="cart" action="http://storedvd.ru/functions.php" method="post">
+		<table>
+			<tbody><tr>
+				<td colspan="8" id="cart_top"></td>
+			</tr>
+			<tr>
+				<td class="cart_left"></td>
+				<td colspan="2">Товар</td>
+				<td>Цена за 1 шт.</td>
+				<td>Количество</td>
+				<td>Стоимость</td>
+				<td></td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr>
+				<td class="cart_left"></td>
+				<td colspan="6">
+					<hr>
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+							<tr class="cart_row">
+					<td class="cart_left"></td>
+					<td class="img">
+						<img src="images/who-am-i.jpg" alt="Кто я?">
+					</td>
+					<td class="title">Кто я?</td>
+					<td>349 руб.</td>
+					<td>
+						<table class="count">
+							<tbody><tr>
+								<td>
+									<input type="text" name="count_16" value="3">
+								</td>
+								<td>шт.</td>
+							</tr>
+						</tbody></table>
+					</td>
+					<td class="bold">1047 руб.</td>
+					<td>
+						<a href="http://storedvd.ru/functions.php?func=delete_cart&amp;id=16" class="link_delete">x удалить</a>
+					</td>
+					<td class="cart_right"></td>
+				</tr>
+									<tr>
+					<td class="cart_left"></td>
+					<td colspan="6" class="cart_border">
+						<hr>
+					</td>
+					<td class="cart_right"></td>
+				</tr>
+											<tr class="cart_row">
+					<td class="cart_left"></td>
+					<td class="img">
+						<img src="images/fei-ying.jpg" alt="Доспехи Бога 2">
+					</td>
+					<td class="title">Доспехи Бога 2</td>
+					<td>290 руб.</td>
+					<td>
+						<table class="count">
+							<tbody><tr>
+								<td>
+									<input type="text" name="count_13" value="1">
+								</td>
+								<td>шт.</td>
+							</tr>
+						</tbody></table>
+					</td>
+					<td class="bold">290 руб.</td>
+					<td>
+						<a href="http://storedvd.ru/functions.php?func=delete_cart&amp;id=13" class="link_delete">x удалить</a>
+					</td>
+					<td class="cart_right"></td>
+				</tr>
+										<tr id="discount">
+				<td class="cart_left"></td>
+				<td colspan="6">
+					
+						<table>
+							<tbody><tr>
+								<td>Введите номер купона со скидкой<br><span>(если есть)</span></td>
+								<td>
+									<input type="text" name="discount" value="">
+								</td>
+								<td>
+									<input type="image" src="images/cart_discount.png" alt="Получить скидку" onmouseover="this.src=&#39;images/cart_discount_active.png&#39;" onmouseout="this.src=&#39;images/cart_discount.png&#39;">
+								</td>
+							</tr>
+						</tbody></table>
+					
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr id="summa">
+				<td class="cart_left"></td>
+				<td colspan="6">
+					<p>Итого : <span>1337 руб.</span></p>
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr>
+				<td class="cart_left"></td>
+				<td colspan="2">
+					<div class="left">
+						<input type="image" src="images/cart_recalc.png" alt="Пересчитать" onmouseover="this.src=&#39;images/cart_recalc_active.png&#39;" onmouseout="this.src=&#39;images/cart_recalc.png&#39;">
+					</div>
+				</td>
+				<td colspan="4">
+					<div class="right">
+						<input type="hidden" name="func" value="cart">
+						<a href="http://storedvd.ru/order">
+							<img src="images/cart_order.png" alt="Оформить заказ" onmouseover="this.src=&#39;images/cart_order_active.png&#39;" onmouseout="this.src=&#39;images/cart_order.png&#39;">
+						</a>
+					</div>
+				</td>
+				<td class="cart_right"></td>
+			</tr>
+			<tr>
+				<td colspan="8" id="cart_bottom"></td>
+			</tr>
+		</tbody></table>
+	
+</form>
+</div></div>
+<!--<div class="contacts23">
+<p id="orders"><span class="ord1">Orders:</span></p>
+<ul>
+<li id="name_surname">Name and Surname: </li>
+<li class="name_surname1">
+		 <div id="name_surname2">
+		   <form name="name_surname" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Name and Surname" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+<li id="phone"> Phone: </li>
+
+<li class="phone1">
+		 <div id="phone2">
+		   <form name="phone" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Phone" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+<li id="email3"> Email: </li>
+
+<li class="email">
+		 <div id="email1">
+		   <form name="email" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Email" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+
+<li id="delivery3"> Delivery: </li>
+
+<li class="delivery">
+		 <div id="delivery1">
+		   <form action="" method="post">
+ 
+ 
+<div id="seldemo">
+ 
+<label class="place_select">Select your place: </label>
+ 
+<select name="selphp">
+ 
+<option value="Maroon">Select please:</option>
+ 
+<option value="Green">Los-Angeles - Delivery price: 500$</option>
+ 
+<option value="Yellow">California - Delivery price: 300$</option>
+ 
+<option value="Blue">New York - Delivery price: 800$</option>
+ 
+<option value="Red">Washington - Delivery price: 200$</option>
+ 
+</select>
+ 
+<p><input type="submit" value="Submit" class="btncls"></p>
+ 
+</div>
+ 
+</form>
+		 </div>
+</li>
+
+</ul>
+
+</div>
+<!-- END DELEIVERED AND PAYEMENT -->
+
+<!-- FULL ADDRESS WINDOW -->
+<!--<div class="full_addr_window">
+<ul>
+<li id="full_addr_window1">Full delivered address: </li>
+<li class="full_addr_window2">
+		 <div id="full_addr_window3">
+		   <form name="full_addr_window3" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="full_addr_window3" placeholder="Full delivered address" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+</li>
+<li id="o_notes">Order's Notes: </li>
+<div id="o_notes1">
+		   <form name="o_notes" action="#" method="get">
+		        <table>
+				  <tr>
+				     <td>
+					   <input type="text" name="query" placeholder="Order's Notes" />
+					 </td>
+					 <td>
+					   <input type="submit" name="o_notes" value="Make Order" />
+					 </td>
+				  </tr>
+				</table>
+				</form>
+		 </div>
+
+</div>-->
+<!-- END FULL ADDRESS WINDOW -->
+<div id="rectangle"></div>
+<!-- Footer -->
+<footer>
+ <div class="counter">
+      <a href="#"><img src="images/counter1.png" alt="Counter" /></a>
+   </div>
+<h3 class="payement_methods">Payement Methods:</h3>
+<div id=payement>
+<div id="payement1">
+<a href="#"><img src="images/master.png"/></a>
+<a href="#"><img src="images/visa.png"/></a>
+<a href="#"><img src="images/webm.png"/></a>
+<a href="#"><img src="images/kiwi.png"/></a>
+<a href="#"><img src="images/yandex.png"/></a>
+</div>
+<div id="payement2">
+<a href="#"><img src="images/bil.png"/></a>
+<a href="#"><img src="images/mts.png"/></a>
+<a href="#"><img src="images/sb.png"/></a>
+<a href="#"><img src="images/a.png"/></a>
+<a href="#"><img src="images/atm.png"/></a>
+</div>
+</div>
+  
+<p class="copyright">Copyright @ All Rights Reserved</p>
+
+</footer>
+<!-- END Footer -->
+</div>
+
+</body>
+</html>
